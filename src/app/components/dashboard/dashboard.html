@@ -1,0 +1,109 @@
+<div class="cabecalho">
+  <div class="flex-cabecalho">
+    <p></p>
+
+    <nav>
+      <ul class="links-cabecalho">
+        <li>
+          <a class="link" (click)="scrollTo('sobre')"> Sobre </a>
+        </li>
+        <li>
+          <a class="link" (click)="scrollTo('habilidades')"> Habilidades </a>
+        </li>
+        <li>
+          <a class="link" (click)="scrollTo('projetos')"> Projetos </a>
+        </li>
+        <li>
+          <a class="link" (click)="scrollTo('contato')"> Contato </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="botao">
+      <button
+        class="pi pi-download botao-cv"
+        (mouseenter)="onMouseEnter()"
+        (mouseleave)="onMouseLeave()"
+        [ngClass]="{ 'hovered': isHovered }"
+      >
+        CV
+      </button>
+    </div>
+  </div>
+</div>
+<div class="corpo-dashboard">
+  <section id="sobre"></section>
+  <div class="dashboard">
+    <div class="pagina-inicial">
+      <h1>Olá, eu sou Wallysson Marcos</h1>
+      <h3>Desenvolvedor Full Stack</h3>
+      <p>
+        Não sei oque colocarNão sei oque colocarNão sei oque colocarNão sei oque
+        colocarNão sei oque colocarNão sei oque colocarNão sei oque colocarNão
+        sei oque colocarNão sei oque colocarNão sei oque colocarNão sei oque
+        colocarNão sei oque colocarNão sei oque colocarNão sei oque colocar
+      </p>
+    </div>
+
+    <img class="imagem-perfil" src="sherek.jpg" alt="imagem" />
+  </div>
+  <div class="links">
+    <a href="https://github.com/wallyssonmar" target="_blank"
+      ><img src="github.png" alt="" />Github</a
+    >
+    <a
+      href="https://www.linkedin.com/in/wallysson-marcos-238a74261/"
+      target="_blank"
+      ><img src="linkedin.png" alt="" />Linkedin</a
+    >
+  </div>
+
+  <section id="habilidades">
+    <div class="habilidades">
+      <h2 class="tittle-items">Habilidades</h2>
+      <div class="imagens">
+        <img class="img-c-sharp" src="html-5.png" alt="" />
+        <img class="img-c-sharp" src="css-3.png" alt="" />
+
+        <img class="img-angular" src="angular.png" alt="" />
+        <img class="img-c-sharp" src="c-sharp.png" alt="" />
+      </div>
+
+      <div>
+        <img class="img-git" src="git.png" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h2 class="tittle-items">Meus projetos</h2>
+    <div class="kd-projeto">
+      <h4>sherek</h4>
+      <div class="img-projetos">
+        <div>
+          <img src="sherek.jpg" alt="" />
+        </div>
+        <div>
+          <img src="sherek.jpg" alt="" />
+        </div>
+        <div>
+          <img src="sherek.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div>
+      <div class="contato-info">
+        <i class="pi pi-envelope"></i>
+        <p>Email: wallysson.marcos.com</p>
+      </div>
+      <div class="contato-info">
+        <i class="pi pi-whatsapp"></i>
+        <p>Whatsapp: (35) 9 8818-3771</p>
+      </div>
+    </div>
+  </section>
+  <footer>Wallysson Marcos</footer>
+</div>

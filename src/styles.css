@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
+:root{
+/* Cores de fundo */
+--background: #ffffff ;
+            
+
+/* Cores de texto */
+--texto-primario: #0f172a ;        
+--texto-secundario: #64748b  ;
+
+/* Cores da borda */    
+--border: #e2e8f0 ;          
+
+}
+
+body{
+    padding: 0;
+    margin:0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color:var(--texto-primario);
+    overflow-x: hidden;
+}
