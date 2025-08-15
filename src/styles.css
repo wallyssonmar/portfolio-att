@@ -22,4 +22,5 @@ body{
     font-style: normal;
     color:var(--texto-primario);
     overflow-x: hidden;
+    background-color: var(--p-gray-50);
 }

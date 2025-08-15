@@ -80,14 +80,27 @@
     <div class="kd-projeto">
       <h4>sherek</h4>
       <div class="img-projetos">
-        <div>
-          <img src="sherek.jpg" alt="" />
-        </div>
-        <div>
-          <img src="sherek.jpg" alt="" />
-        </div>
-        <div>
-          <img src="sherek.jpg" alt="" />
+        <div class="card">
+          <p-galleria
+            [value]="images"
+            [showItemNavigators]="true"
+            [showThumbnails]="false"
+            [showIndicators]="true"
+            [showItemNavigatorsOnHover]="true"
+            [circular]="true"
+            [responsiveOptions]="responsiveOptions"
+            [containerStyle]="{ 'max-width': '640px', 'border' : 'none' }"
+          >
+            <ng-template #item let-item>
+              <img
+                [src]="item.projetoPriorize"
+                style="width: 20rem; display: block"
+              />
+            </ng-template>
+            <ng-template #thumbnail let-item>
+              <img [src]="item.thumbnailImageSrc" style="display: block" />
+            </ng-template>
+          </p-galleria>
         </div>
       </div>
     </div>

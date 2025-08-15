@@ -127,6 +127,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 30rem;
   gap: 2rem;
 }
 
