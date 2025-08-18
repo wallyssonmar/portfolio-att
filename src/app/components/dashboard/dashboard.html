@@ -38,26 +38,16 @@
       <h1>Olá, eu sou Wallysson Marcos</h1>
       <h3>Desenvolvedor Full Stack</h3>
       <p>
-        Não sei oque colocarNão sei oque colocarNão sei oque colocarNão sei oque
-        colocarNão sei oque colocarNão sei oque colocarNão sei oque colocarNão
-        sei oque colocarNão sei oque colocarNão sei oque colocarNão sei oque
-        colocarNão sei oque colocarNão sei oque colocarNão sei oque colocar
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem repudiandae eligendi maxime ducimus, sunt doloribus eaque maiores magnam, vero incidunt, saepe porro dolores? Culpa modi voluptates nisi repellat odio!
       </p>
     </div>
 
     <img class="imagem-perfil" src="sherek.jpg" alt="imagem" />
   </div>
-  <div class="links">
-    <a href="https://github.com/wallyssonmar" target="_blank"
-      ><img src="github.png" alt="" />Github</a
-    >
-    <a
-      href="https://www.linkedin.com/in/wallysson-marcos-238a74261/"
-      target="_blank"
-      ><img src="linkedin.png" alt="" />Linkedin</a
-    >
+  <div >
+    <h4>scroll</h4>
+    <p class="pi pi-angle-double-down"></p>
   </div>
-
   <section id="habilidades">
     <div class="habilidades">
       <h2 class="tittle-items">Habilidades</h2>
@@ -89,7 +79,7 @@
             [showItemNavigatorsOnHover]="true"
             [circular]="true"
             [responsiveOptions]="responsiveOptions"
-            [containerStyle]="{ 'max-width': '640px', 'border' : 'none' }"
+            [containerStyle]="{ 'max-width': '640px', 'border' : 'none',}"
           >
             <ng-template #item let-item>
               <img
@@ -107,15 +97,78 @@
   </section>
 
   <section id="contato">
+    <form action="https://formspree.io/f/mgvzqjww" method="POST">
+      <label
+        class="label-contato"
+        style="
+          background-color: var(--p-gray-50);
+          margin-left: 2.56rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+        "
+      >
+        Seu email:
+        <input
+          style="
+            background-color: var(--p-gray-50);
+            border: solid 1px var(--border);
+            border-radius: 5px;
+            height: 2rem;
+            width: 20rem;
+            color: black;
+          "
+          type="email"
+          name="email"
+        />
+      </label>
+      <label
+        class="label-contato"
+        style="display: flex; align-items: center; gap: 1rem"
+      >
+        Sua mensagem:
+        <textarea
+          style="
+            background-color: var(--p-gray-50);
+            border: solid 1px var(--border);
+            border-radius: 5px;
+            height: 6rem;
+            width: 20rem;
+            color: black;
+          "
+          message
+        ></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <button
+        type="submit"
+        style="
+          width: 4rem;
+          background-color: var(--p-gray-200);
+          color: black;
+          border: 0;
+        "
+      >
+        Send
+      </button>
+    </form>
     <div>
-      <div class="contato-info">
-        <i class="pi pi-envelope"></i>
-        <p>Email: wallysson.marcos.com</p>
-      </div>
-      <div class="contato-info">
+      <div class="links">
+        <a href="https://github.com/wallyssonmar" target="_blank"
+          ><img src="github.png" alt="" />Github</a
+        >
+        <a
+          href="https://www.linkedin.com/in/wallysson-marcos-238a74261/"
+          target="_blank"
+          ><img src="linkedin.png" alt="" />Linkedin</a
+        >
+        <div class="contato-info">
         <i class="pi pi-whatsapp"></i>
         <p>Whatsapp: (35) 9 8818-3771</p>
       </div>
+      </div>
+      
     </div>
   </section>
   <footer>Wallysson Marcos</footer>

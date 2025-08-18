@@ -9,6 +9,7 @@ section {
   width: 100vw;
   border-bottom: 2px solid var(--border);
   background-color: var(--background);
+  z-index: 999;
 }
 
 .flex-cabecalho {
@@ -31,7 +32,8 @@ section {
 
 .link:hover {
   cursor: pointer;
-  background-color: aqua;
+  background-color: var(--p-gray-300);
+  border-radius: 5px;
 }
 .botao {
   margin-right: 1rem;
@@ -53,7 +55,8 @@ section {
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  margin: 15rem auto 15rem auto;
+  padding-top: 15rem;
+  margin: 0 auto 15rem auto;
 }
 
 .imagem-perfil {
@@ -67,27 +70,7 @@ section {
   width: 50rem;
 }
 
-.links {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin-bottom: 5rem;
-}
 
-.links a {
-  text-decoration: none;
-  color: var(--texto-primario);
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.links a img {
-  width: 2.5rem;
-  height: 2.5rem;
-}
 
 .habilidades {
   display: flex;
@@ -95,6 +78,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 5rem;
+  margin-top: 10rem;
 }
 #projetos {
   display: flex;
@@ -152,8 +136,12 @@ section {
   width: 5rem;
   height: 5rem;
 }
-#contato{
-  margin-bottom: 2rem;
+#contato{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 0 3rem 0;
+  gap: 3rem;
 }
 .contato-info {
   display: flex;
@@ -162,7 +150,41 @@ section {
   gap: 0.5rem;
   align-items: center;
   height: 2rem;
-  margin-left: 1rem;
+  
+}
+
+#contato form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  
+  height: 209px;
+  gap: 2rem;
+  
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--texto-primario);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.links a img {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 footer {
@@ -171,4 +193,6 @@ footer {
   display: flex;
   align-items: center;
   background-color: aliceblue;
+  padding-left: 2rem;
 }
+

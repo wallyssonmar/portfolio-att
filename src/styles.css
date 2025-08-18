@@ -10,7 +10,7 @@
 --texto-secundario: #64748b  ;
 
 /* Cores da borda */    
---border: #e2e8f0 ;          
+--border: var(--p-gray-300) ;          
 
 }
 
@@ -24,3 +24,4 @@ body{
     overflow-x: hidden;
     background-color: var(--p-gray-50);
 }
+
