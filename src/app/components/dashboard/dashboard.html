@@ -20,14 +20,26 @@
     </nav>
 
     <div class="botao">
-      <button
+      <a
+        href="Wallysson Marcos Rezende da Silva P.pdf"
+        download="Wallysson Marcos Rezende da Silva P.pdf"
         class="pi pi-download botao-cv"
         (mouseenter)="onMouseEnter()"
         (mouseleave)="onMouseLeave()"
         [ngClass]="{ 'hovered': isHovered }"
+        style="
+          text-decoration: none;
+          color: var(--texto-primario);
+          border: solid 1.5px var(--border);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          width: 5rem;
+          height: 2rem;
+        "
+        ><p>CV</p></a
       >
-        CV
-      </button>
     </div>
   </div>
 </div>
@@ -38,29 +50,31 @@
       <h1>Olá, eu sou Wallysson Marcos</h1>
       <h3>Desenvolvedor Full Stack</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem repudiandae eligendi maxime ducimus, sunt doloribus eaque maiores magnam, vero incidunt, saepe porro dolores? Culpa modi voluptates nisi repellat odio!
+          Sou desenvolvedor iniciante com conhecimentos básicos em C#, Angular e
+        Git. Gosto de aprender novas tecnologias e estou sempre buscando evoluir
+        como programador full stack.
       </p>
     </div>
 
-    <img class="imagem-perfil" src="sherek.jpg" alt="imagem" />
+    <img class="imagem-perfil" src="minha-foto.jpeg" alt="imagem" />
   </div>
-  <div >
-    <h4>scroll</h4>
-    <p class="pi pi-angle-double-down"></p>
+  <div style="display: flex; align-items: center; justify-content: center">
+    <img style="width: 3rem" src="down-arrow.png" alt="" />
+    <h4 style="font-size: 20px">scroll</h4>
   </div>
   <section id="habilidades">
     <div class="habilidades">
       <h2 class="tittle-items">Habilidades</h2>
       <div class="imagens">
-        <img class="img-c-sharp" src="html-5.png" alt="" />
-        <img class="img-c-sharp" src="css-3.png" alt="" />
+        <img class="img-c-sharp" src="habilidades/html-5.png" alt="html-5" />
+        <img class="img-c-sharp" src="habilidades/css-3.png" alt="css-3" />
 
-        <img class="img-angular" src="angular.png" alt="" />
-        <img class="img-c-sharp" src="c-sharp.png" alt="" />
+        <img class="img-angular" src="habilidades/angular.png" alt="angular" />
+        <img class="img-c-sharp" src="habilidades/c-sharp.png" alt="c-sharp" />
       </div>
 
       <div>
-        <img class="img-git" src="git.png" alt="" />
+        <img class="img-git" src="habilidades/git.png" alt="git" />
       </div>
     </div>
   </section>
@@ -68,8 +82,40 @@
   <section id="projetos">
     <h2 class="tittle-items">Meus projetos</h2>
     <div class="kd-projeto">
-      <h4>sherek</h4>
-      <div class="img-projetos">
+      <h4>Priorize</h4>
+      <div style="gap: 2rem" class="img-projetos">
+        <p style="width: 50rem; font-size: 23px">
+          Este foi meu primeiro projeto utilizando Angular e C#. Inicialmente
+          usei SQL Server como banco de dados, mas ao preparar o deploy com
+          Docker, optei por migrar para SQLite para simplificar a hospedagem.
+          Esse projeto me ajudou a entender melhor o ciclo completo de
+          desenvolvimento, integração e deploy de aplicações web.
+        </p>
+        <div class="botao">
+          <a
+            href="https://github.com/wallyssonmar/Priorize"
+            target="_blank"
+            
+            class="pi pi-external-link botao-cv"
+            (mouseenter)="onMouseEnter()"
+            (mouseleave)="onMouseLeave()"
+            [ngClass]="{ 'hovered': isHovered }"
+             
+            style="
+              text-decoration: none;
+              color: var(--texto-primario);
+              border: solid 1.5px var(--border);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 0.5rem;
+              width: 9rem;
+              height: 2.5rem;
+              
+            "
+            ><p>Ver projeto</p></a
+          >
+        </div>
         <div class="card">
           <p-galleria
             [value]="images"
@@ -79,12 +125,12 @@
             [showItemNavigatorsOnHover]="true"
             [circular]="true"
             [responsiveOptions]="responsiveOptions"
-            [containerStyle]="{ 'max-width': '640px', 'border' : 'none',}"
+            [containerStyle]="{ 'max-width': '950px','border': 'solid 1px var(--border)'}"
           >
             <ng-template #item let-item>
               <img
                 [src]="item.projetoPriorize"
-                style="width: 20rem; display: block"
+                style="width: 100rem; display: block"
               />
             </ng-template>
             <ng-template #thumbnail let-item>
@@ -102,11 +148,12 @@
         class="label-contato"
         style="
           background-color: var(--p-gray-50);
-          margin-left: 2.56rem;
+
           display: flex;
-          align-items: center;
+          flex-direction: column;
+          align-items: start;
           justify-content: center;
-          gap: 1rem;
+          gap: 0.5rem;
         "
       >
         Seu email:
@@ -125,7 +172,14 @@
       </label>
       <label
         class="label-contato"
-        style="display: flex; align-items: center; gap: 1rem"
+        style="
+          display: flex;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: center;
+          gap: 0.5rem;
+        "
       >
         Sua mensagem:
         <textarea
@@ -144,10 +198,13 @@
       <button
         type="submit"
         style="
-          width: 4rem;
-          background-color: var(--p-gray-200);
+          width: 8rem;
+          height: 2rem;
+          font-size: 20px;
+          background-color: var(--p-gray-300);
           color: black;
           border: 0;
+          border-radius: 5px;
         "
       >
         Send
@@ -164,12 +221,11 @@
           ><img src="linkedin.png" alt="" />Linkedin</a
         >
         <div class="contato-info">
-        <i class="pi pi-whatsapp"></i>
-        <p>Whatsapp: (35) 9 8818-3771</p>
+          <img style="width: 2.5rem" src="whatsapp.png" alt="" />
+          <p>(35) 9 8818-3771</p>
+        </div>
       </div>
-      </div>
-      
     </div>
   </section>
-  <footer>Wallysson Marcos</footer>
+  <footer>© 2025 Wallysson Marcos</footer>
 </div>

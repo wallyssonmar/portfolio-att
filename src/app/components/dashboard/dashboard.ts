@@ -21,9 +21,9 @@ export class Dashboard {
   
   ngOnInit(){
     this.images = [
-      {projetoPriorize : '/sherek.jpg'},
-      {projetoPriorize : '/git.png'},
-      {projetoPriorize : '/sherek.jpg'},
+      {projetoPriorize : '/priorize/priorize-1.png'},
+      {projetoPriorize : '/priorize/priorize-2.png'},
+      {projetoPriorize : '/priorize/priorize-3.png'},
     ]
   }
 

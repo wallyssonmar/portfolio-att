@@ -10,6 +10,7 @@ section {
   border-bottom: 2px solid var(--border);
   background-color: var(--background);
   z-index: 999;
+  
 }
 
 .flex-cabecalho {
@@ -22,12 +23,14 @@ section {
   display: flex;
   gap: 2rem;
   list-style: none;
+  
 }
 
 .link {
   text-decoration: none;
   color: var(--texto-primario);
   padding: 0.5rem 1rem;
+  
 }
 
 .link:hover {
@@ -36,7 +39,8 @@ section {
   border-radius: 5px;
 }
 .botao {
-  margin-right: 1rem;
+  margin: 0.4rem 2rem 0 0;
+  gap: 0.5rem;
 }
 
 .botao-cv {
@@ -44,6 +48,11 @@ section {
   border: 1px solid var(--border);
   border-radius: 5px;
   background-color: var(--background);
+  
+}
+
+.botao-cv p {
+  font-family: "Poppins", sans-serif;
 }
 .hovered {
   cursor: pointer;
@@ -111,7 +120,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30rem;
+  flex-direction: column;
+  height: auto;
+  
   gap: 2rem;
 }
 
@@ -167,7 +178,7 @@ section {
   align-items: start;
   justify-content: start;
   
-  height: 209px;
+  height: 224px;
   gap: 2rem;
   
 }
@@ -192,7 +203,7 @@ footer {
   height: 3rem;
   display: flex;
   align-items: center;
-  background-color: aliceblue;
+  background-color: var(--p-gray-300);
   padding-left: 2rem;
 }
 
