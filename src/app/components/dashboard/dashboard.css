@@ -291,6 +291,9 @@ footer {
   #projetos{
     margin-top: 6rem;
   }
+  .img-projetos{
+    width: 100vw;
+  }
 
   .kd-projeto p{
     width: 100vw;
