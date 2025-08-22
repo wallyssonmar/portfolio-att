@@ -78,7 +78,9 @@ section {
   font-size: 1.5rem;
   width: 50rem;
 }
-
+.scroll{
+  width: 3rem;
+}
 
 
 .habilidades {
@@ -122,8 +124,17 @@ section {
   justify-content: center;
   flex-direction: column;
   height: auto;
-  
+  width: 50rem;
   gap: 2rem;
+}
+.galleria-image{
+  display: block;
+  width: 100rem;
+}
+
+.img-projetos p{
+  
+  padding: 1rem;
 }
 
 .tittle-items {
@@ -205,5 +216,92 @@ footer {
   align-items: center;
   background-color: var(--p-gray-300);
   padding-left: 2rem;
+}
+
+@media ( max-width: 768px){
+  .flex-cabecalho{
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .cabecalho{
+    display: none;
+  }
+  .menu-mobile{
+    position: fixed;
+    margin: 0.5rem;
+    
+  }
+  
+  .corpo-dashboard{
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    
+  }
+  .dashboard{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0rem;
+    gap: 1rem;
+  }
+  .imagem-perfil{
+    margin-top: 4rem;
+  }
+
+  .pagina-inicial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    font-size: 15px;
+    padding-left: 1rem;
+    
+  }
+  .scroll{
+    width: 1.5rem;
+  }
+
+  
+  .habilidades{
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .tittle-items{
+    font-size: 30px;
+  }
+
+  .imagens{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+  }
+  
+  #projetos{
+    margin-top: 6rem;
+  }
+
+  .kd-projeto p{
+    width: 100vw;
+  }
+
+   .galleria-image {
+    width: 25rem;
+  }
+
+  #contato{
+    flex-direction: column-reverse;
+  }
 }
 

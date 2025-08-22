@@ -43,6 +43,11 @@
     </div>
   </div>
 </div>
+<div class="menu-mobile">
+  <p-menu #menu [model]="items" [popup]="true" appendTo="body"></p-menu>
+  <p-button (click)="menu.toggle($event)" icon="pi pi-ellipsis-v" [style]="{'background-color':'var(--p-gray-300)','border':'none'}"></p-button>
+</div>
+
 <div class="corpo-dashboard">
   <section id="sobre"></section>
   <div class="dashboard">
@@ -58,8 +63,8 @@
 
     <img class="imagem-perfil" src="minha-foto.jpeg" alt="imagem" />
   </div>
-  <div style="display: flex; align-items: center; justify-content: center">
-    <img style="width: 3rem" src="down-arrow.png" alt="" />
+  <div  style="display: flex; align-items: center; justify-content: center">
+    <img class="scroll"  src="down-arrow.png" alt="" />
     <h4 style="font-size: 20px">scroll</h4>
   </div>
   <section id="habilidades">
@@ -84,7 +89,7 @@
     <div class="kd-projeto">
       <h4>Priorize</h4>
       <div style="gap: 2rem" class="img-projetos">
-        <p style="width: 50rem; font-size: 23px">
+        <p style=" font-size: 23px">
           Este foi meu primeiro projeto utilizando Angular e C#. Inicialmente
           usei SQL Server como banco de dados, mas ao preparar o deploy com
           Docker, optei por migrar para SQLite para simplificar a hospedagem.
@@ -130,7 +135,7 @@
             <ng-template #item let-item>
               <img
                 [src]="item.projetoPriorize"
-                style="width: 100rem; display: block"
+                 class="galleria-image"
               />
             </ng-template>
             <ng-template #thumbnail let-item>
